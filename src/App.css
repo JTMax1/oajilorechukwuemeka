@@ -55,7 +55,8 @@ main {
 }
 
 .nav-link:hover, .nav-link.active {
-  color: var(--color-primary);
+  color: var(--color-accent);
+  font-weight: 900;
 }
 
 .nav-link.active::after {
