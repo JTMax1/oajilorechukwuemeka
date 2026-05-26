@@ -19,6 +19,11 @@ import logoChannels from '../assets/media-mentions/Channels.png';
 import logoCourier from '../assets/media-mentions/africanCourier.png';
 import logoCable from '../assets/media-mentions/theCable.png';
 
+// Blogs
+import blogTeachingResearchGap from '../assets/blogs/Teaching-research-gap.png';
+import blogAiEducation from '../assets/blogs/AI-education.png';
+import blogNobelPrize from '../assets/blogs/Nobel-Prize1.png';
+
 const Home = () => {
     // Duplicated arrays for infinite seamless scrolling effect
     const galleryItems = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery1, gallery2, gallery3, gallery4, gallery5];
@@ -110,7 +115,7 @@ const Home = () => {
                     <div className="grid-3">
                         {/* Article 1 */}
                         <div className="article-card">
-                            <img src="/src/assets/blogs/Teaching-research-gap.png" alt="Teaching-research gap" className="article-img" />
+                            <img src={blogTeachingResearchGap} alt="Teaching-research gap" className="article-img" />
                             <div className="article-content">
                                 <span className="article-date">January 12, 2026</span>
                                 <h3 className="article-title">Teaching-research gap: The overlooked crisis in higher education</h3>
@@ -123,7 +128,7 @@ const Home = () => {
 
                         {/* Article 2 */}
                         <div className="article-card">
-                            <img src="/src/assets/blogs/AI-education.png" alt="Nigerian education and AI" className="article-img" />
+                            <img src={blogAiEducation} alt="Nigerian education and AI" className="article-img" />
                             <div className="article-content">
                                 <span className="article-date">November 10, 2025</span>
                                 <h3 className="article-title">Nigerian education and AI: The conversation we should be having</h3>
@@ -136,7 +141,7 @@ const Home = () => {
 
                         {/* Article 3 */}
                         <div className="article-card">
-                            <img src="/src/assets/blogs/Nobel-Prize1.png" alt="Nobel Prize reflections" className="article-img" />
+                            <img src={blogNobelPrize} alt="Nobel Prize reflections" className="article-img" />
                             <div className="article-content">
                                 <span className="article-date">October 14, 2025</span>
                                 <h3 className="article-title">Nobel Prize reflections: The urgent case for funding African research</h3>
