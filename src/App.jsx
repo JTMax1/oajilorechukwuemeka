@@ -59,7 +59,12 @@ const Navbar = () => {
                     <div className="nav-item-dropdown">
                         {/* Desktop Works Dropdown - Only renders on Desktop */}
                         <div className="nav-item-dropdown desktop-only">
-                            <Link to="/works" className={`nav-link ${location.pathname === '/works' ? 'active' : ''}`}>Works</Link>
+                            <Link to="/works" className={`nav-link ${location.pathname === '/works' ? 'active' : ''}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+                                <span>Works</span>
+                                <span className="desktop-works-caret" style={{ fontSize: '10px', transition: 'transform 0.3s ease', display: 'inline-block' }}>
+                                    ▼
+                                </span>
+                            </Link>
                             <div className="mega-menu">
                                 <div className="mega-menu-grid">
                                     <div className="mega-menu-column">
