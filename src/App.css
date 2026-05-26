@@ -370,3 +370,18 @@ main {
 .mobile-dropdown-link:hover {
   color: var(--color-primary);
 }
+
+/* Contact Page Responsive Layout */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
