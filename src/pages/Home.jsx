@@ -110,7 +110,7 @@ const Home = () => {
                     <div className="grid-3">
                         {/* Article 1 */}
                         <div className="article-card">
-                            <img src="https://www.thecable.ng/wp-content/uploads/2025/10/Unilag-Students-e1761743757325.jpg" alt="Teaching-research gap" className="article-img" />
+                            <img src="/src/assets/blogs/Teaching-research-gap.png" alt="Teaching-research gap" className="article-img" />
                             <div className="article-content">
                                 <span className="article-date">January 12, 2026</span>
                                 <h3 className="article-title">Teaching-research gap: The overlooked crisis in higher education</h3>
@@ -123,7 +123,7 @@ const Home = () => {
 
                         {/* Article 2 */}
                         <div className="article-card">
-                            <img src="https://www.thecable.ng/wp-content/uploads/2025/11/AI-education.png" alt="Nigerian education and AI" className="article-img" />
+                            <img src="/src/assets/blogs/AI-education.png" alt="Nigerian education and AI" className="article-img" />
                             <div className="article-content">
                                 <span className="article-date">November 10, 2025</span>
                                 <h3 className="article-title">Nigerian education and AI: The conversation we should be having</h3>
@@ -136,7 +136,7 @@ const Home = () => {
 
                         {/* Article 3 */}
                         <div className="article-card">
-                            <img src="https://www.thecable.ng/wp-content/uploads/2025/10/Nobel-Prize1.jpg" alt="Nobel Prize reflections" className="article-img" />
+                            <img src="/src/assets/blogs/Nobel-Prize1.png" alt="Nobel Prize reflections" className="article-img" />
                             <div className="article-content">
                                 <span className="article-date">October 14, 2025</span>
                                 <h3 className="article-title">Nobel Prize reflections: The urgent case for funding African research</h3>
