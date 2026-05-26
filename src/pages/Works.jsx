@@ -29,7 +29,7 @@ const Works = () => {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '100px' }}>
                     
                     {/* Section 1: Education & Thought Leadership */}
-                    <div id="education" className="works-grid" style={{
+                    <div id="thought-leadership" className="works-grid" style={{
                         borderBottom: '1px solid var(--color-rule-soft)',
                         paddingBottom: '80px'
                     }}>
@@ -70,7 +70,7 @@ const Works = () => {
                             </div>
 
                             {/* Card 2: Teacher Training */}
-                            <div style={{ background: '#FFF', padding: '35px', boxShadow: '0 5px 15px rgba(58, 51, 43, 0.05)', border: '1px solid var(--color-rule-soft)', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                            <div id="teacher-training" style={{ background: '#FFF', padding: '35px', boxShadow: '0 5px 15px rgba(58, 51, 43, 0.05)', border: '1px solid var(--color-rule-soft)', display: 'flex', flexDirection: 'column', gap: '20px' }}>
                                 <h3 style={{ fontSize: '1.4rem' }}>Teacher Training</h3>
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', flexGrow: 1 }}>
                                     <div>
