@@ -169,3 +169,17 @@ main {
   border-top: 1px solid var(--color-rule-on-dark);
   padding-top: 30px;
 }
+
+/* Works Page Responsive Layout */
+.works-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+
+@media (max-width: 900px) {
+  .works-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}

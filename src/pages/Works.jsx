@@ -16,7 +16,7 @@ const Works = () => {
     const sections = [
         {
             id: 'education',
-            title: 'Education',
+            title: 'Education Thought Leadership',
             subtitle: 'Research Work, Teacher Training & Education Policy',
             desc: 'Driving educational transformation through comprehensive research, innovative teacher training programs, and strategic policy development that shapes the future of learning.',
             items: [
@@ -64,10 +64,7 @@ const Works = () => {
             <div className="container section-padding">
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '80px' }}>
                     {sections.map((sec, idx) => (
-                        <div id={sec.id} key={sec.id} style={{
-                            display: 'grid',
-                            gridTemplateColumns: '1fr 2fr',
-                            gap: '40px',
+                        <div id={sec.id} key={sec.id} className="works-grid" style={{
                             borderBottom: idx !== sections.length - 1 ? '1px solid var(--color-rule-soft)' : 'none',
                             paddingBottom: idx !== sections.length - 1 ? '80px' : '0'
                         }}>
