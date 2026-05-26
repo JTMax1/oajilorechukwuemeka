@@ -16,10 +16,10 @@ const Works = () => {
     return (
         <div className="fade-in">
             {/* Header Section */}
-            <div style={{ backgroundColor: 'var(--color-paper-deep)', padding: '80px 0', textAlign: 'center' }}>
+            <div style={{ backgroundColor: 'var(--color-ink-deep)', padding: '80px 0', textAlign: 'center' }}>
                 <div className="container">
-                    <h1 style={{ fontSize: '3rem', marginBottom: '20px' }}>MY WORKS</h1>
-                    <p style={{ maxWidth: '600px', margin: '0 auto', color: 'var(--color-ink-muted)' }}>
+                    <h1 style={{ fontSize: '3rem', marginBottom: '20px', color: 'var(--color-cream-on-dark)'  }}>MY WORKS</h1>
+                    <p style={{ maxWidth: '600px', margin: '0 auto', color: 'var(--color-cream-muted)' }}>
                         Exploring the intersection of education, personal development, and social impact through research, coaching, and entrepreneurship.
                     </p>
                 </div>
