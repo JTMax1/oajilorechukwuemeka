@@ -183,3 +183,114 @@ main {
     gap: 30px;
   }
 }
+
+/* Navigation Mega-Menu Dropdown Styling */
+@media (min-width: 993px) {
+  .nav-item-dropdown {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: -10px;
+  }
+  
+  .mega-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(15px);
+    width: 960px;
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-rule-soft);
+    box-shadow: 0 15px 35px rgba(58, 51, 43, 0.08);
+    padding: 35px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  .nav-item-dropdown:hover .mega-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+  }
+  
+  .mega-menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 25px;
+    text-align: left;
+  }
+  
+  .mega-menu-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .mega-menu-title {
+    font-family: var(--font-heading);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--color-accent); /* Brand Gold */
+    border-bottom: 1px solid var(--color-rule-soft);
+    padding-bottom: 8px;
+    margin-bottom: 5px;
+  }
+  
+  .mega-menu-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .mega-menu-links a {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--color-text);
+    font-weight: 400;
+    line-height: 1.4;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+  }
+  
+  .mega-menu-links a:hover {
+    color: var(--color-accent);
+    padding-left: 4px;
+  }
+  
+  .mega-menu-footer {
+    border-top: 1px solid var(--color-rule-soft);
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .mega-menu-footer-link {
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-text);
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .mega-menu-footer-link:hover {
+    color: var(--color-primary);
+    transform: translateX(4px);
+  }
+}
+
+/* Hide mega menu dropdown on mobile entirely - falls back to direct Works page click */
+@media (max-width: 992px) {
+  .mega-menu {
+    display: none !important;
+  }
+}
