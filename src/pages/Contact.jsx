@@ -15,10 +15,11 @@ const Contact = () => {
                 <div className="contact-grid">
                     {/* Left Column: Portrait */}
                     <div className="contact-portrait-wrapper" style={{ paddingRight: '20px', paddingBottom: '20px' }}>
-                        <div style={{ position: 'relative', width: '100%', aspectRatio: '4/5', borderRadius: '4px', overflow: 'visible' }}>
+                        <div className="contact-portrait-inner" style={{ position: 'relative', width: '100%', aspectRatio: '4/5', borderRadius: '4px', overflow: 'visible' }}>
                             <img 
                                 src={OluwatoyinPortrait} 
                                 alt="Oluwatoyin Ajilore-Chukwuemeka" 
+                                className="contact-portrait-img"
                                 style={{ 
                                     width: '100%', 
                                     height: '100%', 
@@ -30,7 +31,7 @@ const Contact = () => {
                                 onError={(e) => { e.target.src = 'https://via.placeholder.com/600x800\?text=Oluwatoyin' }}
                             />
                             {/* Decorative minimalist golden border frame offset */}
-                            <div style={{ 
+                            <div className="desktop-only" style={{ 
                                 position: 'absolute', 
                                 top: '20px', 
                                 left: '20px', 

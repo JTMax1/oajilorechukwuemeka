@@ -379,9 +379,40 @@ main {
   align-items: center;
 }
 
+/* Contact Portrait Default Styling */
+.contact-portrait-wrapper {
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
 @media (max-width: 900px) {
   .contact-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 0; /* Remove grid gap to use exact margin-bottom spacing */
+  }
+
+  .contact-portrait-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 50px; /* Generous bottom spacing for thumb-friendly scrolling */
+    width: 100%;
+  }
+
+  /* Force inner container to a constrained centered square */
+  .contact-portrait-wrapper .contact-portrait-inner {
+    width: 220px !important;
+    height: 220px !important;
+    aspect-ratio: 1/1 !important;
+    border-radius: 50% !important; /* Perfect circle on mobile */
+    overflow: hidden !important;
+  }
+
+  /* Transform portrait image to a perfect circle */
+  .contact-portrait-img {
+    border-radius: 50% !important;
+    border: 2px solid var(--color-rule-soft) !important;
+    box-shadow: 0 10px 25px rgba(58, 51, 43, 0.05) !important;
   }
 }
