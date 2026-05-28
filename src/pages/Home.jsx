@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, PlayCircle } from 'lucide-react';
 import './Home.css';
-import HeroImage from '../assets/Mrs-OAC-1.png';
+import HeroImage from '../assets/mrs-OAC/Mrs-OAC-1.png';
 
 // Gallery
 import gallery1 from '../assets/gallery/image-1.png';
